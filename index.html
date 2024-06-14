@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1>TXC TXC TOE</h1>
+    </header>
+    <main>
+        <div class="play-area">
+            <div class="player-card-1">
+                <h2 id="player-1-display">Player #1</h2>
+                <div class="input-box">
+                    <input id="Player-1-name" placeholder="Enter Name" />
+                </div>
+                <div class="player-1-icon">
+                    <svg fill="#000000" height="150px" width="150px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="-68.6 -68.6 627.20 627.20" xml:space="preserve" stroke="#000000"
+                        stroke-width="40.17999999999999">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            <rect x="-68.6" y="-68.6" width="627.20" height="627.20" rx="94.08" fill="#ffffff"
+                                strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <polygon
+                                points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 ">
+                            </polygon>
+                        </g>
+                    </svg>
+                </div>
+                <h3>Score: <span id="player-1-score">0</span></h3>
+            </div>
+            <div class="game-area">
+                <div class="game-board-grid">
+                    <div class="grid-item">
+                        <button onClick="handle00(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle01(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle02(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle10(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle11(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle12(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle20(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle21(this)"></button>
+                    </div>
+                    <div class="grid-item">
+                        <button onClick="handle22(this)"></button>
+                    </div>
+                </div>
+                <button id="reset-icon" onClick="handleGameReset(this)">
+                    <svg width="64px" height="64px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="2.1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 1 1 0 2.5 2.5)"> <path d="m3.98652376 1.07807068c-2.38377179 1.38514556-3.98652376 3.96636605-3.98652376 6.92192932 0 4.418278 3.581722 8 8 8s8-3.581722 8-8-3.581722-8-8-8"></path> <path d="m4 1v4h-4" transform="matrix(1 0 0 -1 0 6)"></path> </g> </g></svg>
+                </button>
+            </div>
+            <div class="player-card">
+                <h2 id="player-2-display">Player #2</h2>
+                <div class="input-box">
+                    <input id="Player-2-name" placeholder="Enter Name" />
+                </div>
+                <div class="player-1-icon">
+                    <svg height="200px" width="200px" viewBox="0 0 24.00 24.00" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                stroke="#000000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <h3>Score: <span id="player-2-score">0</span> </h3>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

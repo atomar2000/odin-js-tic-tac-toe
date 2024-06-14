@@ -1,0 +1,166 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(39, 12, 12); */
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-1-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    flex: 1;
+    width: 100%;
+}
+
+input {
+    border: 2px black solid;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    color: white;
+    text-shadow: 5px 5px #9b9b9b60;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.play-area{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game-area {
+    height: 70%;
+    width: 40%;
+    border: 5px black solid;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 10px 10px 0px 0px rgba(3, 3, 3, 0.678);
+    transition: box-shadow 100ms linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("./resources/wood.jpg"); */
+}
+
+.player-card-1 {
+    height: 50%;
+    width: 20%;
+    border-radius: 5%;
+    border: 5px black solid;
+    background-color: white;
+    box-shadow: 10px 10px 0px 0px rgba(3, 3, 3, 0.678);
+    transition: box-shadow 100ms linear;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-card-1:hover{
+    box-shadow: 10px 10px 0px 0px #7adeff;
+    transition: box-shadow 100ms linear;
+}
+
+.player-card {
+    height: 50%;
+    width: 20%;
+    border-radius: 5%;
+    border: 5px black solid;
+    background-color: white;
+    box-shadow: 10px 10px 0px 0px rgba(3, 3, 3, 0.678);
+    transition: box-shadow 100ms linear;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-card:hover{
+    box-shadow: 10px 10px 0px 0px rgba(255, 36, 36, 0.445);
+    transition: box-shadow 100ms linear;
+}
+
+.game-board-grid {
+    display: grid;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5%;
+    background-color: rgba(117, 250, 255, 0.493);
+    background-image: url("./resources/sky-dark.gif");
+}
+
+#reset-icon{
+    border: none;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px rgba(245, 245, 245, 0.13) solid;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.grid-item > button:hover {
+    background-color: rgba(255, 255, 255, 0.096);
+    transition: background-color 100ms linear;
+}
+
+.grid-item > button {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 5%;
+    transition: background-color 100ms linear;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+    }
+}
